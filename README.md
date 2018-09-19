@@ -6,8 +6,8 @@ A Node-RED application with [resin-supervisor](https://docs.resin.io/runtime/sup
 Variable Name | Default | Description
 ------------ | ------------- | -------------
 PORT | `80` | the port that exposes the Node-RED UI
-USERNAME | `none` | the Node-RED admin username
-PASSWORD | `none` | the Node-RED admin password [hash](https://nodered.org/docs/security#generating-the-password-hash)
+USERNAME | `admin` | the Node-RED admin username
+PASSWORD | `$2a$08$bETnmqhI7L7xyyk1Oqq.YO65uQ1DrcDoyWwRRn9X/eCCVvRCRH66m` | the Node-RED admin password [hash](https://nodered.org/docs/security#generating-the-password-hash)
 
 You **must** set the `USERNAME` and `PASSWORD` environment variables to be able to save or run programs in Node-RED.  
 The hash for the `PASSWORD` variable can be generated using the [`node-red-admin`](https://nodered.org/docs/node-red-admin)
