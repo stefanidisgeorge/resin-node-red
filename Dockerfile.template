@@ -12,7 +12,6 @@ RUN apk add --no-cache make gcc g++ python g++ python linux-headers udev && \
   JOBS=MAX npm install -g node-red node-red-contrib-resinio --production --silent && \
   npm install serialport --build-from-source && \
   npm install -g node-red-contrib-modbus && \
-  npm install ieee754 && \
   apk del make gcc g++ python && \
   npm cache clean --force && rm -rf /tmp/*
 
